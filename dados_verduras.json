@@ -1,0 +1,282 @@
+{
+    "geral": [
+        {
+            "nome": "BROCOLIS COMUM UN.",
+            "total": 1353.06,
+            "media": 193.29,
+            "var": -41.22
+        },
+        {
+            "nome": "COUVE FLOR UN.",
+            "total": 7109.3,
+            "media": 1015.61,
+            "var": 10.15
+        },
+        {
+            "nome": "REPOLHO VERDE KG",
+            "total": 2235.52,
+            "media": 319.36,
+            "var": -40.39
+        },
+        {
+            "nome": "ALFACE AMERICANA UN.",
+            "total": 6030.74,
+            "media": 861.53,
+            "var": -4.33
+        },
+        {
+            "nome": "ALFACE CRESPA UN.",
+            "total": 869.7,
+            "media": 124.24,
+            "var": 79.44
+        },
+        {
+            "nome": "ESPINAFRE UN.",
+            "total": 2352.01,
+            "media": 336.0,
+            "var": -20.67
+        },
+        {
+            "nome": "HORTELA UN.",
+            "total": 751.89,
+            "media": 107.41,
+            "var": -10.19
+        },
+        {
+            "nome": "RUCULA UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "AGRIAO COMUM UN.",
+            "total": 1791.16,
+            "media": 255.88,
+            "var": -2.56
+        },
+        {
+            "nome": "COUVE COM REPOLHO ROXO UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "CHICORIA UN.",
+            "total": 471.35,
+            "media": 67.34,
+            "var": -19.27
+        },
+        {
+            "nome": "BROCOLIS AMERICANO UN.",
+            "total": 16697.07,
+            "media": 2385.3,
+            "var": -13.59
+        },
+        {
+            "nome": "ALECRIM UNI.",
+            "total": 630.2,
+            "media": 90.03,
+            "var": 38.9
+        },
+        {
+            "nome": "ALFACE CRESPA HIDROPONICA UN.",
+            "total": 8278.29,
+            "media": 1182.61,
+            "var": -2.86
+        },
+        {
+            "nome": "ALFACE LISA HIDROPONICA UN.",
+            "total": 1913.04,
+            "media": 273.29,
+            "var": 34.49
+        },
+        {
+            "nome": "RUCULA HIDROPONICA UN.",
+            "total": 2137.54,
+            "media": 305.36,
+            "var": -5.79
+        },
+        {
+            "nome": "COUVE C/CENOURA E REPOLHO UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "REPOLHO PICADO UN.",
+            "total": 44.85,
+            "media": 6.41,
+            "var": -87.9
+        },
+        {
+            "nome": "COUVE MINEIRA PICADA UN",
+            "total": 5516.79,
+            "media": 788.11,
+            "var": 0.91
+        },
+        {
+            "nome": "BROCOLIS AMERICANO EMBALADO UN",
+            "total": 2770.93,
+            "media": 395.85,
+            "var": 288.64
+        },
+        {
+            "nome": "REPOLHO ROXO PICADO UN.",
+            "total": 29.9,
+            "media": 4.27,
+            "var": -41.18
+        },
+        {
+            "nome": "MIX DE REPOLHO ROXO E VERDE UN",
+            "total": 62.79,
+            "media": 8.97,
+            "var": -52.27
+        },
+        {
+            "nome": "ALFACE CRESPA ROXA HIDROPONICA UN.",
+            "total": 1235.1,
+            "media": 176.44,
+            "var": 17.43
+        },
+        {
+            "nome": "REPOLHO ROXO KG",
+            "total": 838.31,
+            "media": 119.76,
+            "var": -28.8
+        },
+        {
+            "nome": "COUVE MINEIRA UN.",
+            "total": 5018.73,
+            "media": 716.96,
+            "var": -19.83
+        },
+        {
+            "nome": "ALFACE CRESPA ROXA UN.",
+            "total": 45.83,
+            "media": 6.55,
+            "var": -39.11
+        },
+        {
+            "nome": "HIDROSTERIL 50ML",
+            "total": 702.36,
+            "media": 100.34,
+            "var": -16.01
+        },
+        {
+            "nome": "BROCOLIS AMERICANO E COUVE FLOR UN",
+            "total": 1861.67,
+            "media": 265.95,
+            "var": 30.9
+        },
+        {
+            "nome": "COUVE MINEIRA COM REPOLHO UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "ALFACE LISA PRE LAVADA KG",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "COUVE FLOR EMBALADA UN",
+            "total": 167.76,
+            "media": 23.97,
+            "var": 124.13
+        },
+        {
+            "nome": "ALFACE LISA UN.",
+            "total": 3.49,
+            "media": 0.5,
+            "var": -70.84
+        },
+        {
+            "nome": "AGRIAO COMUM PRE LAVADO KG",
+            "total": 25.04,
+            "media": 3.58,
+            "var": 1298.88
+        },
+        {
+            "nome": "COUVE C/BROCOLIS UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "AGRIAO HIDROPONICO UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "COUVE C/ABOBRINHA UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "ALFACE ROMANA UN.",
+            "total": 7.98,
+            "media": 1.14,
+            "var": 0.0
+        }
+    ],"top5": [
+    {"nome": "Brocolis Americano", "total": 16697.07, "media": 2385.29, "var": -13.59},
+    {"nome": "Alface Crespa Hidropônica", "total": 8278.29, "media": 1182.61, "var": -2.86},
+    {"nome": "Couve Flor", "total": 7109.30, "media": 1015.61, "var": 10.15},
+    {"nome": "Alface Americana", "total": 6030.74, "media": 861.53, "var": -4.33},
+    {"nome": "Couve Mineira Picada", "total": 5516.79, "media": 788.11, "var": 0.91}
+],
+
+
+
+"high": [
+    {"nome": "Brocolis Americano Embalado", "total": 2770.93, "var": 288.64},
+    {"nome": "Alface Crespa", "total": 869.70, "var": 79.44},
+    {"nome": "Alecrim", "total": 630.20, "var": 38.90},
+    {"nome": "Alface Lisa Hidropônica", "total": 1913.04, "var": 34.49},
+    {"nome": "Alface Crespa Roxa Hidropônica", "total": 1235.10, "var": 17.43}
+],
+
+   "potential": [
+    {"nome": "Alface Crespa Hidropônica", "total": 8278.29, "var": -2.86},
+    {"nome": "Couve Flor", "total": 7109.30, "var": 10.15},
+    {"nome": "Couve Mineira Picada", "total": 5516.79, "var": 0.91},
+    {"nome": "Alface Lisa Hidropônica", "total": 1913.04, "var": 34.49},
+    {"nome": "Alface Crespa Roxa Hidropônica", "total": 1235.10, "var": 17.43}
+],
+
+    "low": [
+    {"nome": "Repolho Verde", "total": 2235.52, "var": -0.4039},
+    {"nome": "Espinafre", "total": 2352.01, "var": -0.2067},
+    {"nome": "Brocolis Comum", "total": 1353.06, "var": -0.4122},
+    {"nome": "Repolho Roxo", "total": 838.31, "var": -0.288},
+    {"nome": "Couve Mineira", "total": 5018.73, "var": -0.1983}
+],
+
+
+
+
+
+"deep_low": [
+    {"nome": "Rucula", "total": 0.00, "var": -100.0},
+    {"nome": "Couve com Repolho Roxo", "total": 0.00, "var": -100.0},
+    {"nome": "Couve c/Cenoura e Repolho", "total": 0.00, "var": -100.0},
+    {"nome": "Couve Mineira com Repolho", "total": 0.00, "var": -100.0},
+    {"nome": "Alface Lisa Pré Lavada", "total": 0.00, "var": -100.0},
+    {"nome": "Couve c/Brocolis", "total": 0.00, "var": -100.0},
+    {"nome": "Agrião Hidropônico", "total": 0.00, "var": -100.0},
+    {"nome": "Couve c/Abobrinha", "total": 0.00, "var": -100.0},
+    {"nome": "Alface Lisa", "total": 3.49, "var": -70.84},
+    {"nome": "Alface Romana", "total": 7.98, "var": 0.0},
+    {"nome": "Agrião Comum Pré Lavado", "total": 25.04, "var": 1298.88},
+    {"nome": "Repolho Roxo Picado", "total": 29.90, "var": -41.18},
+    {"nome": "Repolho Picado", "total": 44.85, "var": -87.9},
+    {"nome": "Alface Crespa Roxa", "total": 45.83, "var": -39.11},
+    {"nome": "Mix de Repolho Roxo e Verde", "total": 62.79, "var": -52.27},
+    {"nome": "Couve Flor Embalada", "total": 167.76, "var": 124.13}
+]
+
+}
