@@ -1,0 +1,179 @@
+{% extends "base_sidebar_verduras.html" %}
+
+{% block title %}Alta Performance — Verduras 2025 | Tech{% endblock %}
+
+{% block content %}
+<!-- Main Content -->
+<header class="main-header">
+  <div class="header-content">
+    <h2>Alta Performance — Verduras</h2>
+    <div class="header-actions">
+      <button class="export-btn" id="exportBtn">
+        <i class="fas fa-download"></i>
+        Exportar
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- KPI Cards -->
+<section class="kpi-section">
+  <div class="kpi-card">
+    <div class="kpi-icon">
+      <i class="fas fa-chart-line"></i>
+    </div>
+    <div class="kpi-content">
+      <h3>Total High Performers</h3>
+      <div class="kpi-value" id="kpi-total-high">-</div>
+      <div class="kpi-trend positive">
+        <i class="fas fa-arrow-up"></i>
+        <span>Produtos em Alta</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="kpi-card">
+    <div class="kpi-icon">
+      <i class="fas fa-trophy"></i>
+    </div>
+    <div class="kpi-content">
+      <h3>Maior Crescimento</h3>
+      <div class="kpi-value" id="kpi-maior-crescimento">-</div>
+      <div class="kpi-trend positive">
+        <i class="fas fa-arrow-up"></i>
+        <span id="kpi-maior-crescimento-valor">-</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="kpi-card">
+    <div class="kpi-icon">
+      <i class="fas fa-dollar-sign"></i>
+    </div>
+    <div class="kpi-content">
+      <h3>Faturamento Total</h3>
+      <div class="kpi-value" id="kpi-faturamento-total">-</div>
+      <div class="kpi-trend positive">
+        <i class="fas fa-arrow-up"></i>
+        <span>High Performers</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="kpi-card">
+    <div class="kpi-icon">
+      <i class="fas fa-percentage"></i>
+    </div>
+    <div class="kpi-content">
+      <h3>Crescimento Médio</h3>
+      <div class="kpi-value" id="kpi-crescimento-medio">-</div>
+      <div class="kpi-trend positive">
+        <i class="fas fa-arrow-up"></i>
+        <span>Performance</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gráficos -->
+<section class="charts-grid">
+  <div class="chart-card">
+    <div class="chart-header">
+      <h3>High Performers — Faturamento 2025</h3>
+      <div class="chart-actions">
+        <button class="chart-btn" id="toggleChartBtn" title="Alternar tipo de gráfico">
+          <i class="fas fa-exchange-alt"></i>
+        </button>
+        <button class="chart-btn" id="fullscreenBtn" title="Tela cheia">
+          <i class="fas fa-expand"></i>
+        </button>
+        <button class="chart-btn" id="downloadChartBtn" title="Download do gráfico">
+          <i class="fas fa-download"></i>
+        </button>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="chartHigh" height="200"></canvas>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-header">
+      <h3>Distribuição de Crescimento</h3>
+      <div class="chart-actions">
+        <button class="chart-btn" id="downloadPieBtn" title="Download do gráfico">
+          <i class="fas fa-download"></i>
+        </button>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="chartDistribution" height="200"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- Tabela de Detalhes -->
+<section class="tables-section">
+  <div class="table-card">
+    <div class="table-header">
+      <h3>Detalhes — Verduras de Alta Performance</h3>
+      <div class="table-actions">
+        <button class="table-btn" id="sortNameBtn">
+          <i class="fas fa-sort-alpha-down"></i>
+        </button>
+        <button class="table-btn" id="sortGrowthBtn">
+          <i class="fas fa-sort-amount-down"></i>
+        </button>
+        <button class="table-btn" id="sortRevenueBtn">
+          <i class="fas fa-sort-numeric-down"></i>
+        </button>
+      </div>
+    </div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Verdura</th>
+            <th>Total 2025</th>
+            <th>Média Mensal</th>
+            <th>Crescimento (%)</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tableHigh">
+          <!-- JavaScript vai preencher -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Modal de Detalhes -->
+<div id="detailModal" class="modal">
+  <div class="modal-overlay"></div>
+  <div class="modal-container">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Detalhes da Verdura</h3>
+        <button class="modal-close" id="modalClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="modalContent">
+          <!-- Conteúdo será preenchido via JavaScript -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn secondary" id="modalCloseBtn">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<!-- Script da página High Performance para Verduras -->
+<script src="{{ url_for('static', filename='js/high_performance_verduras.js') }}"></script>
+{% endblock %}

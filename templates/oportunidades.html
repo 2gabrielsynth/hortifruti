@@ -1,0 +1,22 @@
+{% extends "base_sidebar.html" %}
+
+{% block title %}Dashboard — Oportunidades 2025 | Tech{% endblock %}
+
+{% block content %}
+<!-- Main Content -->
+<header class="main-header">
+  <h2>Oportunidades de Crescimento — Frutas (2025)</h2>
+</header>
+
+<section class="cards">
+  <div class="card wide">
+    <h3>Principais Oportunidades</h3>
+    <canvas id="chartOportunidades" height="150"></canvas>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<!-- Script da página -->
+<script src="{{ url_for('static', filename='js/oportunidades.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,100 @@
+/* Dados Gerais - Estilos Específicos */
+.loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    color: var(--text-tertiary);
+    text-align: center;
+}
+
+.loading-state i {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.loading-state.hidden {
+    display: none;
+}
+
+/* Ajustes para cards de KPI */
+.kpi-card .kpi-content h4 {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-tertiary);
+}
+
+/* Tabela de resumo */
+#resumoCategorias td {
+    white-space: normal;
+    min-width: 120px;
+}
+
+.status-badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-block;
+}
+
+.status-badge.positive {
+    background: var(--success);
+    color: white;
+}
+
+.status-badge.negative {
+    background: var(--danger);
+    color: white;
+}
+
+.status-badge.neutral {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-tertiary);
+}
+
+/* Melhorias para responsividade */
+@media (max-width: 768px) {
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .kpi-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .table-container {
+        font-size: 0.875rem;
+    }
+    
+    .status-badge {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
+    }
+}
+
+/* Animações suaves */
+.kpi-card {
+    transition: all 0.3s ease;
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Melhorias para acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    .kpi-card {
+        transition: none;
+    }
+    
+    .kpi-card:hover {
+        transform: none;
+    }
+}

@@ -1,0 +1,46 @@
+{% extends "base_sidebar.html" %}
+
+{% block title %}Alta Performance — Frutas 2025 | Tech{% endblock %}
+
+{% block content %}
+<!-- Main Content -->
+<header class="main-header">
+  <h2>Alta Performance — Frutas (2025)</h2>
+  <div class="legend">
+    <span class="chip green">Crescimento</span>
+    <span class="chip red">Queda</span>
+  </div>
+</header>
+
+<!-- Cards / Gráficos -->
+<section class="cards">
+  <div class="card">
+    <h3>Gráfico de Alta Performance</h3>
+    <canvas id="chartHigh" height="180"></canvas>
+  </div>
+</section>
+
+<!-- Tabela de Alta Performance -->
+<section class="tables">
+  <div class="table-card">
+    <h3>Detalhes — Alta Performance</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Fruta</th>
+          <th>Total 2025</th>
+          <th>Variação (%)</th>
+        </tr>
+      </thead>
+      <tbody id="tableHigh">
+        <!-- high_performance.js vai preencher -->
+      </tbody>
+    </table>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<!-- Script da página -->
+<script src="{{ url_for('static', filename='js/high_performance.js') }}"></script>
+{% endblock %}

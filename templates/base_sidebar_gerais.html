@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR" id="theme-root">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{% block title %}Dashboard — Hortifruti 2025 | Tech{% endblock %}</title>
+    
+    <!-- CSS padrão (tema escuro) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_frutas3.css') }}" id="main-css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.grafo_fix.css') }}">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar FIXA -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <div class="brand-info">
+        <h1>Hortifruti 2025</h1>
+        <p class="sub">Análise de Faturamento - Gabriel Machado</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="{{ url_for('dashboard') }}" class="nav-link {% if request.endpoint == 'dashboard' %}active{% endif %}">
+        <i class="fa-solid fa-apple-whole"></i>
+        <span>Frutas</span>
+      </a>
+      <a href="{{ url_for('dashboard_legumes') }}" class="nav-link {% if request.endpoint == 'dashboard_legumes' %}active{% endif %}">
+        <i class="fa-solid fa-carrot"></i>
+        <span>Legumes</span>
+      </a>
+      <a href="{{ url_for('dashboard_verduras') }}" class="nav-link {% if request.endpoint == 'dashboard_verduras' %}active{% endif %}">
+        <i class="fa-solid fa-leaf"></i>
+        <span>Verduras</span>
+      </a>
+      
+    </nav>
+
+    <div class="meta">
+      <!-- BOTÃO DE TROCA DE TEMA -->
+      <div class="theme-toggle-container">
+        <button class="theme-toggle" id="themeToggle" title="Alternar tema claro/escuro">
+          <i class="fas fa-moon"></i>
+          <span>Tema Escuro</span>
+        </button>
+      </div>
+      
+      <div class="user-info">
+        <i class="fas fa-user"></i>
+        <span>Gabriel Machado</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Conteúdo DINÂMICO -->
+  <main class="main">
+    {% block content %}{% endblock %}
+  </main>
+</div>
+
+<!-- Script do tema -->
+<script src="{{ url_for('static', filename='js/theme-switcher.js') }}"></script>
+
+{% block scripts %}{% endblock %}
+</body>
+</html>

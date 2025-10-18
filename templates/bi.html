@@ -1,0 +1,162 @@
+{% extends "base_sidebar_gerais.html" %}
+
+{% block title %}Dados Gerais Consolidados | Dashboard 2025{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dados_gerais.css') }}">
+{% endblock %}
+
+{% block content %}
+<header class="main-header">
+    <div class="header-content">
+        <h2>Dados Gerais Consolidados</h2>
+        <div class="header-actions">
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="indicator green"></div>
+                    <span>Positivo</span>
+                </div>
+                <div class="legend-item">
+                    <div class="indicator red"></div>
+                    <span>Negativo</span>
+                </div>
+                <div class="legend-item">
+                    <div class="indicator neutral"></div>
+                    <span>Neutro</span>
+                </div>
+            </div>
+            <button class="export-btn" id="exportReport">
+                <i class="fas fa-file-export"></i>
+                <span>Exportar Relatório</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- KPIs Gerais Consolidados -->
+<section class="kpi-section">
+    <div class="kpi-card" data-kpi="faturamento-total">
+        <div class="kpi-icon">
+            <i class="fas fa-dollar-sign"></i>
+        </div>
+        <div class="kpi-content">
+            <h3>Faturamento Total 2025</h3>
+            <div class="kpi-value" id="faturamento-total">Carregando...</div>
+            <div class="kpi-trend" id="trend-faturamento">
+                <i class="fas fa-minus"></i>
+                <span id="variacao-faturamento">Carregando...</span>
+            </div>
+            <h4>Consolidado: Frutas, Legumes e Verduras</h4>
+        </div>
+    </div>
+    
+    <div class="kpi-card" data-kpi="volume-total">
+        <div class="kpi-icon">
+            <i class="fas fa-weight-hanging"></i>
+        </div>
+        <div class="kpi-content">
+            <h3>Volume Total</h3>
+            <div class="kpi-value" id="volume-total">Carregando...</div>
+            <div class="kpi-trend" id="trend-volume">
+                <i class="fas fa-minus"></i>
+                <span id="variacao-volume">Carregando...</span>
+            </div>
+            <h4>Volume consolidado de todos os produtos</h4>
+        </div>
+    </div>
+    
+    <div class="kpi-card" data-kpi="top-performer">
+        <div class="kpi-icon">
+            <i class="fas fa-trophy"></i>
+        </div>
+        <div class="kpi-content">
+            <h3>Top Performer</h3>
+            <div class="kpi-value" id="top-performer-nome">Carregando...</div>
+            <div class="kpi-trend positive">
+                <i class="fas fa-arrow-up"></i>
+                <span id="top-performer-variacao">Carregando...</span>
+            </div>
+            <h4>Maior crescimento entre todas as categorias</h4>
+        </div>
+    </div>
+</section>
+
+<!-- Distribuição por Categoria -->
+<section class="charts-grid">
+    <div class="chart-card">
+        <div class="chart-header">
+            <h3>Distribuição por Categoria</h3>
+            <div class="chart-actions">
+                <button class="chart-btn" data-action="expand">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="chart-btn" data-action="download" data-chart="categorias">
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="categoriasChart"></canvas>
+        </div>
+    </div>
+    
+    <div class="chart-card">
+        <div class="chart-header">
+            <h3>Top 5 Produtos - Todas Categorias</h3>
+            <div class="chart-actions">
+                <button class="chart-btn" data-action="expand">
+                    <i class="fas fa-expand"></i>
+                </button>
+                <button class="chart-btn" data-action="download" data-chart="top5-global">
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="top5GlobalChart"></canvas>
+        </div>
+    </div>
+</section>
+
+<!-- Tabela Consolidada -->
+<section class="tables-section">
+    <div class="table-card">
+        <div class="table-header">
+            <h3>Resumo por Categoria</h3>
+            <div class="table-actions">
+                <button class="table-btn" id="btnRefresh">
+                    <i class="fas fa-sync-alt"></i>
+                </button>
+            </div>
+        </div>
+        <div class="table-container">
+            <table id="resumoCategorias">
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Faturamento 2025</th>
+                        <th>Variação vs 2024</th>
+                        <th>Volume</th>
+                        <th>Top Produto</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaResumo">
+                    <!-- Dados serão carregados via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Loading State -->
+<div class="loading-state" id="loadingState">
+    <i class="fas fa-spinner fa-spin"></i>
+    <p>Carregando dados consolidados...</p>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/bi.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,186 @@
+{% extends "base_sidebar.html" %}
+
+{% block title %}Top 5 — Frutas 2025 | Tech{% endblock %}
+
+{% block content %}
+<!-- Main Content -->
+<header class="main-header">
+  <div class="header-content">
+    <h2>Top 5 — Faturamento Médio</h2>
+    <div class="header-actions">
+      <button class="export-btn" id="exportBtn">
+        <i class="fas fa-download"></i>
+        Exportar
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Modal para KPI Cards -->
+<div id="kpiModal" class="modal">
+  <div class="modal-overlay"></div>
+  <div class="modal-container">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Detalhes do KPI</h3>
+        <button class="modal-close" id="modalClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="modalContent">
+          <!-- Conteúdo será preenchido via JavaScript -->
+        </div>
+        <!-- Área do gráfico detalhado (inicialmente oculta) -->
+        <div id="modalChartContainer" class="modal-chart-container" style="display: none;">
+          <div class="chart-header">
+            <h4 id="modalChartTitle">Gráfico Detalhado</h4>
+            <div class="chart-actions">
+              <button class="chart-btn" id="modalChartDownload" title="Download do gráfico">
+                <i class="fas fa-download"></i>
+              </button>
+            </div>
+          </div>
+          <div class="chart-container">
+            <canvas id="modalChartCanvas" height="300"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn secondary" id="modalBack">
+          <i class="fas fa-arrow-left"></i>
+          <span id="modalBackText">Voltar</span>
+        </button>
+        <button class="modal-btn primary" id="modalChartBtn">
+          <i class="fas fa-chart-line"></i>
+          <span id="modalChartText">Ver Gráfico Detalhado</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- KPI Cards -->
+<section class="kpi-section">
+  <div class="kpi-card" data-kpi="lider">
+    <div class="kpi-icon">
+      <i class="fas fa-crown"></i>
+    </div>
+    <div class="kpi-content">
+      <h3>Líder do Ranking</h3>
+      <div class="kpi-value" id="kpi-lider">-</div>
+      <div class="kpi-trend" id="kpi-lider-trend">
+        <i class="fas fa-minus"></i>
+        <span>Carregando...</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="kpi-card" data-kpi="faturamento">
+    <div class="kpi-icon">
+      <i class="fas fa-chart-bar"></i>
+    </div>
+    <div class="kpi-content">
+      <h3>Faturamento Total</h3>
+      <div class="kpi-value" id="kpi-total">-</div>
+      <div class="kpi-trend positive">
+        <i class="fas fa-arrow-up"></i>
+        <span>Top Performers</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="kpi-card" data-kpi="crescimento">
+    <div class="kpi-icon">
+      <i class="fas fa-trend-up"></i>
+    </div>
+    <div class="kpi-content">
+      <h3>Maior Crescimento</h3>
+      <div class="kpi-value" id="kpi-maior-crescimento">-</div>
+      <div class="kpi-trend positive">
+        <i class="fas fa-arrow-up"></i>
+        <span id="kpi-maior-crescimento-valor">-</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="kpi-card" data-kpi="media">
+    <div class="kpi-icon">
+      <i class="fas fa-balance-scale"></i>
+    </div>
+    <div class="kpi-content">
+      <h3>Média Geral</h3>
+      <div class="kpi-value" id="kpi-media-geral">-</div>
+      <div class="kpi-trend neutral">
+        <i class="fas fa-chart-line"></i>
+        <span>Performance</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gráfico Principal -->
+<section class="charts-grid">
+  <div class="chart-card">
+    <div class="chart-header">
+      <h3>Top 5 — Faturamento Médio Mensal</h3>
+      <div class="chart-actions">
+        <button class="chart-btn" id="toggleChartBtn" title="Alternar tipo de gráfico">
+          <i class="fas fa-exchange-alt"></i>
+        </button>
+        <button class="chart-btn" id="fullscreenBtn" title="Tela cheia">
+          <i class="fas fa-expand"></i>
+        </button>
+        <button class="chart-btn" id="downloadChartBtn" title="Download do gráfico">
+          <i class="fas fa-download"></i>
+        </button>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="chartTop5" height="200"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- Tabela de Detalhes -->
+<section class="tables-section">
+  <div class="table-card">
+    <div class="table-header">
+      <h3>Detalhes — Ranking Top 5</h3>
+      <div class="table-actions">
+        <button class="table-btn" id="sortNameBtn">
+          <i class="fas fa-sort-alpha-down"></i>
+        </button>
+        <button class="table-btn" id="sortTotalBtn">
+          <i class="fas fa-sort-amount-down"></i>
+        </button>
+      </div>
+    </div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Posição</th>
+            <th>Fruta</th>
+            <th>Total 2025</th>
+            <th>Média Mensal</th>
+            <th>Variação (%)</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="tableTop5">
+          <!-- JavaScript vai preencher -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<!-- Script do Top 5 -->
+<script src="{{ url_for('static', filename='js/top5.js') }}"></script>
+
+<!-- Script do Modal KPI -->
+
+{% endblock %}

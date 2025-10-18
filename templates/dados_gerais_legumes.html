@@ -1,0 +1,223 @@
+{% extends "base_sidebar_legumes.html" %}
+
+{% block title %}Dados Gerais — Legumes 2025 | Tech{% endblock %}
+
+{% block content %}
+<header class="main-header">
+    <div class="header-content">
+        <h2>Dados Gerais — Performance Consolidada</h2>
+        <div class="header-actions">
+            <div class="legend">
+                <span class="legend-item">
+                    <div class="indicator green"></div>
+                    Crescimento
+                </span>
+                <span class="legend-item">
+                    <div class="indicator red"></div>
+                    Queda
+                </span>
+                <span class="legend-item">
+                    <div class="indicator neutral"></div>
+                    Estável
+                </span>
+            </div>
+            <button class="export-btn" id="exportBtn">
+                <i class="fas fa-download"></i>
+                Exportar
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- KPI Cards SIMPLIFICADO -->
+<section class="kpi-section">
+    <div class="kpi-card">
+        <div class="kpi-icon">
+            <i class="fas fa-chart-bar"></i>
+        </div>
+        <div class="kpi-content">
+            <h3>Total de Legumes</h3>
+            <div class="kpi-value" id="totalLegumes">{{ (dados.geral|length - 1) }}</div>
+            <div class="kpi-trend neutral">
+                <i class="fas fa-list"></i>
+                <span>Itens Analisados</span>
+            </div>
+        </div>
+    </div>
+<div class="kpi-card">
+    <div class="kpi-icon">
+        <i class="fas fa-dollar-sign"></i>
+    </div>
+    <div class="kpi-content">
+        <h3>Faturamento Total</h3>
+        <div class="kpi-value" id="faturamentoTotal">
+            {% set total_item = dados.geral|selectattr("nome", "equalto", "TOTAL GERAL")|first %}
+            {% if total_item %}
+                R$ {{ "%0.2f"|format(total_item.total) }}
+            {% else %}
+                R$ 0,00
+            {% endif %}
+        </div>
+        <div class="kpi-trend positive">
+            <i class="fas fa-chart-line"></i>
+            <span>Consolidado</span>
+        </div>
+    </div>
+</div>
+
+    <div class="kpi-card">
+        <div class="kpi-icon">
+            <i class="fas fa-trend-up"></i>
+        </div>
+        <div class="kpi-content">
+            <h3>Maior Crescimento</h3>
+            <div class="kpi-value" id="maiorCrescimento">
+                {% set maior_cresc = (dados.geral|rejectattr("nome", "equalto", "TOTAL GERAL")|map(attribute="var")|max) %}
+                {{ "%+.1f"|format(maior_cresc) }}%
+            </div>
+            <div class="kpi-trend positive">
+                <i class="fas fa-arrow-up"></i>
+                <span>Performance</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="kpi-card">
+        <div class="kpi-icon">
+            <i class="fas fa-balance-scale"></i>
+        </div>
+        <div class="kpi-content">
+            <h3>Média Geral</h3>
+            <div class="kpi-value" id="mediaGeral">
+    {% set total_item = dados.geral|selectattr("nome", "equalto", "TOTAL GERAL")|first %}
+    {% if total_item %}
+        R$ {{ "%0.2f"|format(total_item.media) }}
+    {% else %}
+        R$ 0,00
+    {% endif %}
+</div>
+            <div class="kpi-trend neutral">
+                <i class="fas fa-calculator"></i>
+                <span>Por Legume</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gráfico de Performance (excluindo o TOTAL) -->
+<section class="charts-grid">
+    <div class="chart-card wide">
+        <div class="chart-header">
+            <h3>Distribuição de Performance — Todos os Legumes</h3>
+            <div class="chart-actions">
+                <button class="chart-btn" id="toggleViewBtn">
+                    <i class="fas fa-exchange-alt"></i>
+                </button>
+                <button class="chart-btn" id="downloadChartBtn">
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="chartPerformance" height="200"></canvas>
+        </div>
+    </div>
+</section>
+
+<!-- Tabela Completa de Dados -->
+<section class="tables-section">
+    <div class="table-card">
+        <div class="table-header">
+            <h3>Detalhes — Performance por Legume</h3>
+            <div class="table-actions">
+                <button class="table-btn" id="sortNameBtn" title="Ordenar por nome">
+                    <i class="fas fa-sort-alpha-down"></i>
+                </button>
+                <button class="table-btn" id="sortTotalBtn" title="Ordenar por faturamento">
+                    <i class="fas fa-sort-amount-down"></i>
+                </button>
+                <button class="table-btn" id="sortVarBtn" title="Ordenar por variação">
+                    <i class="fas fa-sort-numeric-down"></i>
+                </button>
+            </div>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Legume</th>
+                        <th>Total 2025 (R$)</th>
+                        <th>Média Mensal (R$)</th>
+                        <th>Variação (%)</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tableGeral">
+                    {% for legume in dados.geral %}
+                    <tr class="{{ 'total-row' if legume.nome == 'TOTAL GERAL' else '' }}">
+                        <td>
+                            <strong>
+                                {% if legume.nome == 'TOTAL GERAL' %}
+                                    📊 {{ legume.nome }}
+                                {% else %}
+                                    {{ legume.nome }}
+                                {% endif %}
+                            </strong>
+                        </td>
+                        <td>R$ {{ "%0.2f"|format(legume.total) }}</td>
+                        <td>R$ {{ "%0.2f"|format(legume.media) }}</td>
+                        <td class="{{ 'positive' if legume.var > 0 else 'negative' if legume.var < 0 else 'neutral' }}">
+                            {{ "+" if legume.var > 0 else "" }}{{ "%0.1f"|format(legume.var) }}%
+                        </td>
+                        <td>
+                            <span class="status-badge {{ 'positive' if legume.var > 0 else 'negative' if legume.var < 0 else 'neutral' }}">
+                                {{ "Crescimento" if legume.var > 0 else "Queda" if legume.var < 0 else "Estável" }}
+                            </span>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Resumo Estatístico SIMPLIFICADO -->
+<section class="cards">
+    <div class="card">
+        <h3>📊 Resumo Estatístico</h3>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-label">Legumes com Crescimento</div>
+                <div class="stat-value positive">
+                    {{ dados.geral|rejectattr("nome", "equalto", "TOTAL GERAL")|selectattr("var", ">", 0)|list|length }}
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Legumes com Queda</div>
+                <div class="stat-value negative">
+                    {{ dados.geral|rejectattr("nome", "equalto", "TOTAL GERAL")|selectattr("var", "<", 0)|list|length }}
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Legumes Estáveis</div>
+                <div class="stat-value neutral">
+                    {{ dados.geral|rejectattr("nome", "equalto", "TOTAL GERAL")|selectattr("var", "==", 0)|list|length }}
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Variação Média</div>
+                <div class="stat-value">
+                    {% for item in dados.geral if item.nome == "TOTAL GERAL" %}
+                        {{ "%+.1f"|format(item.var) }}%
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/dados_gerais_legumes.js') }}"></script>
+{% endblock %}

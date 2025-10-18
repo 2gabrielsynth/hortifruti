@@ -1,0 +1,26 @@
+{% extends "base_sidebar_legumes.html" %}
+
+{% block title %}Dashboard — Alertas 2025 | Tech{% endblock %}
+
+{% block content %}
+<!-- Main Content -->
+<header class="main-header">
+  <h2>Alertas — Legumes 2025</h2>
+</header>
+
+<section class="cards">
+  <div class="card wide">
+    <h3>Legumes com Queda Significativa (Resumida)</h3>
+    <canvas id="chartAlertas" height="150"></canvas>
+  </div>
+  <div class="card wide">
+    <h3>Legumes com Queda Significativa - Geral</h3>
+    <canvas id="chartAlertas2" height="150"></canvas>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<!-- Script da página -->
+<script src="{{ url_for('static', filename='js/alertas_legumes.js') }}"></script>
+{% endblock %}

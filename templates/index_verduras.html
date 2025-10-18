@@ -1,0 +1,170 @@
+{% extends "base_sidebar_verduras.html" %}
+
+{% block title %}Dashboard — Verduras 2025 | Tech{% endblock %}
+
+{% block content %}
+<!-- Main Content -->
+<header class="main-header">
+  <div class="header-content">
+    <h2>Mercadeli — Verduras (2025 vs 2024)</h2>
+    <div class="header-actions">
+      <div class="legend">
+        <span class="legend-item">
+          <div class="indicator green"></div>
+          Crescimento
+        </span>
+        <span class="legend-item">
+          <div class="indicator red"></div>
+          Queda
+        </span>
+        <span class="legend-item">
+          <div class="indicator neutral"></div>
+          Estável
+        </span>
+      </div>
+      <button class="export-btn">
+        <i class="fas fa-download"></i>
+        Exportar
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Loading State -->
+<div id="loading" class="loading-state">
+  <i class="fas fa-spinner fa-spin"></i>
+  <span>Carregando dados do dashboard...</span>
+</div>
+
+<!-- KPI Cards -->
+<section class="kpi-section" id="kpiSection" style="display: none;">
+  <div class="kpi-card">
+    <div class="kpi-icon">
+      <i class="fas fa-dollar-sign"></i>
+    </div>
+    <div class="kpi-content">
+      <h3>Faturamento Total</h3>
+      <h4>Período: 01/2025 à 07/2025</h4>
+      <h4>    e      01/2025 à 07/2025</h4>
+
+      <div class="kpi-value" id="faturamentoTotal">Carregando...</div>
+      <div class="kpi-trend" id="trendFaturamento">
+        <i class="fas fa-spinner fa-spin"></i>
+        Calculando...
+      </div>
+    </div>
+  </div>
+
+  <div class="kpi-card">
+    <div class="kpi-icon">
+      <i class="fas fa-shopping-basket"></i>
+    </div>
+    <div class="kpi-content">
+      <h3>Volume Total</h3>
+      <div class="kpi-value" id="volumeTotal">Carregando...</div>
+      <div class="kpi-trend" id="trendVolume">
+        <i class="fas fa-spinner fa-spin"></i>
+        Calculando...
+      </div>
+    </div>
+  </div>
+
+  <div class="kpi-card">
+    <div class="kpi-icon">
+      <i class="fas fa-star"></i>
+    </div>
+    <div class="kpi-content">
+      <h3>Top Performer</h3>
+      <div class="kpi-value" id="topPerformerNome">Carregando...</div>
+      <div class="kpi-trend" id="trendTopPerformer">
+        <i class="fas fa-spinner fa-spin"></i>
+        Calculando...
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gráficos -->
+<section class="charts-grid" id="chartsSection" style="display: none;">
+  <div class="chart-card">
+    <div class="chart-header">
+      <h3>Top 5 — Faturamento Médio</h3>
+      <div class="chart-actions">
+        <button class="chart-btn"><i class="fas fa-expand"></i></button>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="chartTop5" height="120"></canvas>
+    </div>
+  </div>
+
+  <div class="chart-card">
+    <div class="chart-header">
+      <h3>Alta Performance</h3>
+      <div class="chart-actions">
+        <button class="chart-btn"><i class="fas fa-expand"></i></button>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="chartHigh" height="800"></canvas>
+    </div>
+  </div>
+
+  <div class="chart-card wide">
+    <div class="chart-header">
+      <h3>Distribuição — Potencial vs Baixa Performance</h3>
+      <div class="chart-actions">
+        <button class="chart-btn"><i class="fas fa-expand"></i></button>
+      </div>
+    </div>
+    <div class="comparison-grid">
+      <div class="comparison-item">
+        <h4>Potencial</h4>
+        <div class="chart-container">
+          <canvas id="chartPotential" height="120"></canvas>
+        </div>
+      </div>
+      <div class="comparison-item">
+        <h4>Baixa Performance</h4>
+        <div class="chart-container">
+          <canvas id="chartLow" height="120"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tabelas -->
+<section class="tables-section" id="tablesSection" style="display: none;">
+  <div class="table-card">
+    <div class="table-header">
+      <h3>Detalhes — Top 5</h3>
+      <div class="table-actions">
+        <button class="table-btn"><i class="fas fa-filter"></i></button>
+        <button class="table-btn"><i class="fas fa-sort"></i></button>
+      </div>
+    </div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Verdura</th>
+            <th>Total 2025</th>
+            <th>Média</th>
+            <th>Var (%)</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="tableTop5">
+          <!-- Dados serão preenchidos via JavaScript -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<!-- Script do Dashboard -->
+<script src="{{ url_for('static', filename='js/script_verduras.js') }}"></script>
+{% endblock %}
