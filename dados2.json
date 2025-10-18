@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "top5": [
         {
@@ -703,4 +704,711 @@
             "var": 0.0
         }
     ]
+=======
+{
+    "top5": [
+        {
+            "nome": "ABOBRINHA ITALIANA KG",
+            "total": 4994.1,
+            "media": 713.44,
+            "var": -18.12
+        },
+        {
+            "nome": "ABOBORA SERGIPANA KG",
+            "total": 4319.47,
+            "media": 617.07,
+            "var": -47.62
+        },
+        {
+            "nome": "ALHO CHINES KG",
+            "total": 22619.29,
+            "media": 3231.33,
+            "var": -6.52
+        },
+        {
+            "nome": "ALHO PORO UN.",
+            "total": 1585.58,
+            "media": 226.51,
+            "var": -43.05
+        },
+        {
+            "nome": "BATATA DOCE ROXA KG",
+            "total": 6799.66,
+            "media": 971.38,
+            "var": -30.85
+        },
+        {
+            "nome": "BATATA INGLESA KG",
+            "total": 32879.61,
+            "media": 4697.09,
+            "var": -49.52
+        },
+        {
+            "nome": "BETERRABA KG",
+            "total": 1477.39,
+            "media": 211.06,
+            "var": -58.88
+        },
+        {
+            "nome": "CEBOLA ROXA KG",
+            "total": 2355.48,
+            "media": 336.5,
+            "var": -39.73
+        },
+        {
+            "nome": "CENOURA KG",
+            "total": 11652.67,
+            "media": 1664.67,
+            "var": -46.88
+        },
+        {
+            "nome": "CHUCHU KG",
+            "total": 4166.56,
+            "media": 595.22,
+            "var": -20.27
+        },
+        {
+            "nome": "INHAME KG",
+            "total": 4308.63,
+            "media": 615.52,
+            "var": -35.97
+        },
+        {
+            "nome": "JILO EMBALADO UN.",
+            "total": 1728.39,
+            "media": 246.91,
+            "var": -13.29
+        },
+        {
+            "nome": "PEPINO JAPONES UN",
+            "total": 214.23,
+            "media": 30.6,
+            "var": 882.26
+        },
+        {
+            "nome": "PEPINO KG",
+            "total": 1627.24,
+            "media": 232.46,
+            "var": -35.66
+        },
+        {
+            "nome": "PIMENTAO AMARELO KG",
+            "total": 1303.24,
+            "media": 186.18,
+            "var": -30.82
+        },
+        {
+            "nome": "PIMENTAO VERDE KG",
+            "total": 1833.04,
+            "media": 261.86,
+            "var": -31.0
+        },
+        {
+            "nome": "PIMENTAO VERMELHO KG",
+            "total": 1641.52,
+            "media": 234.5,
+            "var": -19.22
+        },
+        {
+            "nome": "TOMATE GRAPE 280G UN.",
+            "total": 607.32,
+            "media": 86.76,
+            "var": 0.75
+        },
+        {
+            "nome": "TOMATE CARMEM KG",
+            "total": 19706.39,
+            "media": 2815.2,
+            "var": -23.67
+        },
+        {
+            "nome": "TOMATE ITALIANO KG",
+            "total": 15472.52,
+            "media": 2210.36,
+            "var": -28.45
+        },
+        {
+            "nome": "VAGEM MACARAO KG",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "VAGEM MACARRAO EMBALADA UN.",
+            "total": 1330.52,
+            "media": 190.07,
+            "var": -31.27
+        },
+        {
+            "nome": "ABOBORA JAPONESA KG",
+            "total": 1412.3,
+            "media": 201.76,
+            "var": 32.94
+        },
+        {
+            "nome": "MILHO VERDE KG",
+            "total": 7.84,
+            "media": 1.12,
+            "var": -98.99
+        },
+        {
+            "nome": "QUIABO EMBALADO UN.",
+            "total": 2754.15,
+            "media": 393.45,
+            "var": 11.12
+        },
+        {
+            "nome": "CENOURA REPOLHO REPOLHO ROXO KG",
+            "total": 1641.71,
+            "media": 234.53,
+            "var": 58.17
+        },
+        {
+            "nome": "ABOBORA BROCOLIS E COUVE FLOR KG",
+            "total": 999.57,
+            "media": 142.8,
+            "var": -10.88
+        },
+        {
+            "nome": "BERINJELA KG",
+            "total": 1652.59,
+            "media": 236.08,
+            "var": -38.34
+        },
+        {
+            "nome": "ERVILHA KG",
+            "total": 3.3,
+            "media": 0.47,
+            "var": -77.58
+        },
+        {
+            "nome": "AIPIM C/ CASCA KG",
+            "total": 2085.57,
+            "media": 297.94,
+            "var": -28.06
+        },
+        {
+            "nome": "AIPIM DESCASCADO KG",
+            "total": 1079.12,
+            "media": 154.16,
+            "var": 64.24
+        },
+        {
+            "nome": "ABOBORA MORANGA KG",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "BATATA ASTERIX KG",
+            "total": 95.86,
+            "media": 13.69,
+            "var": -56.2
+        },
+        {
+            "nome": "ABOBORA SERGIPANA DESCASCADA KG",
+            "total": 4408.64,
+            "media": 629.81,
+            "var": 24.11
+        },
+        {
+            "nome": "CENOURA C/ REPOLHO UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "CENOURA RALADA KG",
+            "total": 1763.58,
+            "media": 251.94,
+            "var": 220.29
+        },
+        {
+            "nome": "MOLHO A CAMPANHA UN.",
+            "total": 978.04,
+            "media": 139.72,
+            "var": 15.98
+        },
+        {
+            "nome": "CHUCHU PROCESSADO UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "PICADOS P/ MAIONESE UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "ALHO DESCASCADO KG",
+            "total": 2262.95,
+            "media": 323.28,
+            "var": -8.29
+        },
+        {
+            "nome": "BATATA CALABRESA KG",
+            "total": 701.93,
+            "media": 100.28,
+            "var": -68.07
+        },
+        {
+            "nome": "ALHO PORO PROCESSADO KG",
+            "total": 1500.24,
+            "media": 214.32,
+            "var": 2682.86
+        },
+        {
+            "nome": "BATATA DOCE PROCESSADA UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "ABOBORA JAPONESA EMBALADA UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "CEBOLA NACIONAL KG",
+            "total": 12178.23,
+            "media": 1739.75,
+            "var": -59.72
+        },
+        {
+            "nome": "ABOBORA JAPONESA PROCESSA UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "CEBOLA MIUDA KG",
+            "total": 533.96,
+            "media": 76.28,
+            "var": 6.74
+        },
+        {
+            "nome": "YAKISSOBA KG",
+            "total": 1863.53,
+            "media": 266.22,
+            "var": -34.01
+        },
+        {
+            "nome": "VAGEM FRANCESA BJ",
+            "total": 1607.75,
+            "media": 229.68,
+            "var": -24.56
+        },
+        {
+            "nome": "ALHO ROXO KG",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "MILHO VERDE EMBALADO UN.",
+            "total": 2186.38,
+            "media": 312.34,
+            "var": 35.53
+        },
+        {
+            "nome": "ERVILHA EMBALADA UN.",
+            "total": 1935.38,
+            "media": 276.48,
+            "var": 1.61
+        },
+        {
+            "nome": "CEBOLINHA UN.",
+            "total": 735.93,
+            "media": 105.13,
+            "var": -9.42
+        },
+        {
+            "nome": "ABOBORA TEMPERADA UN",
+            "total": 104.85,
+            "media": 14.98,
+            "var": -86.31
+        },
+        {
+            "nome": "BATATA BAROA DESCASCADA VACUO KG",
+            "total": 2549.11,
+            "media": 364.16,
+            "var": 124.88
+        },
+        {
+            "nome": "SELETA DE LEGUMES KG",
+            "total": 3927.2,
+            "media": 561.03,
+            "var": 21.33
+        },
+        {
+            "nome": "BATATA VACUO UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "BATATA BAROA KG",
+            "total": 1007.75,
+            "media": 143.96,
+            "var": -75.07
+        },
+        {
+            "nome": "KIT BABY KG",
+            "total": 5169.37,
+            "media": 738.48,
+            "var": 464.05
+        },
+        {
+            "nome": "CENOURA A VACUO UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "MIX DE LEGUMES KG",
+            "total": 1421.15,
+            "media": 203.02,
+            "var": -5.48
+        },
+        {
+            "nome": "QUIABO KG",
+            "total": 8.33,
+            "media": 1.19,
+            "var": -93.28
+        },
+        {
+            "nome": "ABOBORA C/ BROCOLIS KG",
+            "total": 2743.42,
+            "media": 391.92,
+            "var": 20.21
+        },
+        {
+            "nome": "TOMATE SWEET GRAPE 200G",
+            "total": 239.6,
+            "media": 34.23,
+            "var": 566.3
+        },
+        {
+            "nome": "VAGEM MACARRAO BJ",
+            "total": 41.94,
+            "media": 5.99,
+            "var": -40.0
+        },
+        {
+            "nome": "MIX LEGUMES P/ ASSAR KG",
+            "total": 447.36,
+            "media": 63.91,
+            "var": -65.59
+        },
+        {
+            "nome": "PEPINO JAPONES KG",
+            "total": 637.45,
+            "media": 91.06,
+            "var": -47.76
+        },
+        {
+            "nome": "TOMATE SWEET GRAPE 300G",
+            "total": 2473.14,
+            "media": 353.31,
+            "var": -48.62
+        },
+        {
+            "nome": "SELETA VARIADA DE LEGUMES UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "CENOURA REPOLHO V BRÓCOLIS UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "CENOURA C/ CHUCHU UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "TOMATE CEREJA UN.",
+            "total": 937.94,
+            "media": 133.99,
+            "var": 2716.64
+        },
+        {
+            "nome": "ABOBRINHA FATIADA UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "BETERRABA C/ CENOURA KG",
+            "total": 1268.82,
+            "media": 181.26,
+            "var": 783.33
+        },
+        {
+            "nome": "BETERRABA RALADA KG",
+            "total": 211.47,
+            "media": 30.21,
+            "var": 65.65
+        },
+        {
+            "nome": "CENOURA C/ BETERRABA KG",
+            "total": 491.18,
+            "media": 70.17,
+            "var": 423.59
+        },
+        {
+            "nome": "ABOBORA COM COUVE UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "BATATA MARQUISE KG",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "ABOBORA JAP/SERG. UN.",
+            "total": 7.98,
+            "media": 1.14,
+            "var": -76.03
+        },
+        {
+            "nome": "AIPIM DESCASCADO VACUO UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "BETERRABA PROCESSADA UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "VAGEM MANTEIGA KG",
+            "total": 2.61,
+            "media": 0.37,
+            "var": -91.23
+        },
+        {
+            "nome": "ABOBRINHA PICADA UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "JILO KG",
+            "total": 8.94,
+            "media": 1.28,
+            "var": 107.42
+        },
+        {
+            "nome": "PEPINO FATIADO UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "BATATA BAROA PROCESSADA UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "PIMENTOES COLORIDOS UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "TOMATE TIPO GRAPE 200G",
+            "total": 78.91,
+            "media": 11.27,
+            "var": 9.72
+        },
+        {
+            "nome": "BATATA INGLESA C/ CENOURA UN.",
+            "total": 17.97,
+            "media": 2.57,
+            "var": -84.61
+        },
+        {
+            "nome": "BATATA PALITO A VACUO KG",
+            "total": 5.98,
+            "media": 0.85,
+            "var": 100.0
+        },
+        {
+            "nome": "ABOBORA C/ ABOBRINHA UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "BAROA C/ CHUCHU UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "CENOURA C/BROCOLIS UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "BATATA YACON PROCESSADA KG",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "BATATA DOCE ROXA 1KG",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "MINI CENOURAS 250G",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "VAGEM MACARRAO PICADA UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "CHUCHU BDJ",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "BATATA DOCE BDJ",
+            "total": 3.99,
+            "media": 0.57,
+            "var": -87.5
+        },
+        {
+            "nome": "CENOURA BETERRABA E VAGEM UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -100.0
+        },
+        {
+            "nome": "KIT SOPAO KG",
+            "total": 2953.97,
+            "media": 422.0,
+            "var": 1142.94
+        },
+        {
+            "nome": "ABOBRINHA CHUCHU E CENOURA UN",
+            "total": 2.99,
+            "media": 0.43,
+            "var": 0.0
+        },
+        {
+            "nome": "BATATA ASTERIX 1KG",
+            "total": 1.99,
+            "media": 0.28,
+            "var": 0.0
+        },
+        {
+            "nome": "BATATA PALITO KG",
+            "total": 1.26,
+            "media": 0.18,
+            "var": 0.0
+        },
+        {
+            "nome": "ABOBORA BRANCA KG",
+            "total": 6.34,
+            "media": 0.91,
+            "var": 0.0
+        },
+        {
+            "nome": "BATATA CHIPS DA CASA KG",
+            "total": 15.2,
+            "media": 2.17,
+            "var": 0.0
+        },
+        {
+            "nome": "BATATA BAROA  BDJ",
+            "total": 279.71,
+            "media": 39.96,
+            "var": 0.0
+        },
+        {
+            "nome": "TOMATE SWEET GRAPE 180G",
+            "total": 136.83,
+            "media": 19.55,
+            "var": 0.0
+        },
+        {
+            "nome": "VAGEM MANTEIGA EMBALADA UN.",
+            "total": 226.47,
+            "media": 32.35,
+            "var": 0.0
+        },
+        {
+            "nome": "MAXIXE UN",
+            "total": 11.98,
+            "media": 1.71,
+            "var": 0.0
+        },
+        {
+            "nome": "ABOBORA C/ COUVE FLOR UN.",
+            "total": 15.98,
+            "media": 2.28,
+            "var": 0.0
+        },
+        {
+            "nome": "BATATA YACON KG",
+            "total": 27.21,
+            "media": 3.89,
+            "var": 0.0
+        },
+        {
+            "nome": "ABOBRINHA C/ CENOURA UN.",
+            "total": 3.99,
+            "media": 0.57,
+            "var": 0.0
+        },
+        {
+            "nome": "ABOBRINHA C/ QUIABO PICADOS UN.",
+            "total": 7.98,
+            "media": 1.14,
+            "var": 0.0
+        },
+        {
+            "nome": "QUIABO PICADO UN.",
+            "total": 5.98,
+            "media": 0.85,
+            "var": 0.0
+        },
+        {
+            "nome": "TOMATE SWEET GRAPE 400G",
+            "total": 175.84,
+            "media": 25.12,
+            "var": 0.0
+        },
+        {
+            "nome": "BROCOLIS/ABOBR/CENOURA UN",
+            "total": 69.9,
+            "media": 9.99,
+            "var": 0.0
+        }
+    ]
+>>>>>>> 424ad9836ce598a2ab3953b72de3b59928c5223f
 }

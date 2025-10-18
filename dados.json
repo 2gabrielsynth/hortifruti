@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 "geral": [
         {
@@ -673,4 +674,681 @@
         {"nome": "Abacate", "total": 0.00, "var": -34.943},
         {"nome": "Melancia Fatiada S/ Casca", "total": 0.00, "var": -98.206}
 ]
+=======
+{
+"geral": [
+        {
+            "nome": "BANANA PRATA KG",
+            "total": 85517.56,
+            "media": 12216.79,
+            "var": -0.398
+        },
+        {
+            "nome": "MAMAO PAPAYA KG",
+            "total": 26568.86,
+            "media": 3795.55,
+            "var": -0.153
+        },
+        {
+            "nome": "MACA GALA KG",
+            "total": 13302.11,
+            "media": 1900.3,
+            "var": -0.436
+        },
+        {
+            "nome": "MAMAO FORMOSA/BAHIA KG",
+            "total": 10409.02,
+            "media": 1487.0,
+            "var": -0.426
+        },
+        {
+            "nome": "MANGA PALMER KG",
+            "total": 10147.96,
+            "media": 1449.71,
+            "var": -0.402
+        },
+        {
+            "nome": "UVA THOMPSON S/ CAROCO UN.",
+            "total": 16096.85,
+            "media": 2299.55,
+            "var": 0.63
+        },
+        {
+            "nome": "MORANGO BJ",
+            "total": 10288.66,
+            "media": 1469.81,
+            "var": -0.112
+        },
+        {
+            "nome": "ABACATE KG",
+            "total": 7917.18,
+            "media": 1131.03,
+            "var": -0.346
+        },
+        {
+            "nome": "LIMAO TAHITI KG",
+            "total": 6813.77,
+            "media": 973.4,
+            "var": -0.534
+        },
+        {
+            "nome": "BANANA DAGUA KG",
+            "total": 10818.4,
+            "media": 1545.49,
+            "var": -0.142
+        },
+        {
+            "nome": "LARANJA PERA KG",
+            "total": 19365.93,
+            "media": 2766.56,
+            "var": 0.315
+        },
+        {
+            "nome": "FEIRINHA UN. (FORA DE LINHA)",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "MACA FUJI KG",
+            "total": 6057.9,
+            "media": 865.41,
+            "var": -0.456
+        },
+        {
+            "nome": "UVA VITORIA S/ CAROCO UN.",
+            "total": 7801.89,
+            "media": 1114.56,
+            "var": 0.409
+        },
+        {
+            "nome": "MELANCIA C/ CASCA KG",
+            "total": 9482.46,
+            "media": 1354.64,
+            "var": 0.274
+        },
+        {
+            "nome": "LARANJA SELETA KG",
+            "total": 4473.97,
+            "media": 639.14,
+            "var": -0.351
+        },
+        {
+            "nome": "LARANJA LIMA KG",
+            "total": 4617.94,
+            "media": 659.71,
+            "var": -0.348
+        },
+        {
+            "nome": "MARACUJA KG",
+            "total": 7426.31,
+            "media": 1060.9,
+            "var": -0.021
+        },
+        {
+            "nome": "MELAO REDINHA KG",
+            "total": 2198.65,
+            "media": 314.09,
+            "var": -0.453
+        },
+        {
+            "nome": "MELAO AMARELO KG",
+            "total": 4865.77,
+            "media": 695.11,
+            "var": -0.316
+        },
+        {
+            "nome": "ABACAXI C/ CASCA UN.",
+            "total": 4875.85,
+            "media": 696.55,
+            "var": 0.009
+        },
+        {
+            "nome": "MANGA TOMMY KG",
+            "total": 2856.85,
+            "media": 408.12,
+            "var": -0.515
+        },
+        {
+            "nome": "PERA WILLIAMS KG",
+            "total": 7174.63,
+            "media": 1024.95,
+            "var": 0.176
+        },
+        {
+            "nome": "MELANCIA FATIADA S/CASCA UN.",
+            "total": 89.89,
+            "media": 12.84,
+            "var": -0.982
+        },
+        {
+            "nome": "MELAO REI KG",
+            "total": 2126.84,
+            "media": 303.83,
+            "var": -0.306
+        },
+        {
+            "nome": "AMEIXA NACIONAL KG",
+            "total": 1022.08,
+            "media": 146.01,
+            "var": -0.553
+        },
+        {
+            "nome": "KIWI CHILENO KG",
+            "total": 3667.17,
+            "media": 523.88,
+            "var": 0.144
+        },
+        {
+            "nome": "MELAO ORANGE KG",
+            "total": 343.89,
+            "media": 49.13,
+            "var": -0.826
+        },
+        {
+            "nome": "PESSEGO KG",
+            "total": 538.7,
+            "media": 76.96,
+            "var": -0.392
+        },
+        {
+            "nome": "LARANJA BAHIA IMPORTADA KG",
+            "total": 5323.32,
+            "media": 760.47,
+            "var": -0.312
+        },
+        {
+            "nome": "MACA ARGENTINA KG",
+            "total": 86.87,
+            "media": 12.41,
+            "var": -0.783
+        },
+        {
+            "nome": "POLPA DE MARACUJA UN.",
+            "total": 849.5,
+            "media": 121.36,
+            "var": -0.614
+        },
+        {
+            "nome": "CEREJA 280G UN.",
+            "total": 47.97,
+            "media": 6.85,
+            "var": -0.827
+        },
+        {
+            "nome": "MACA VERDE KG",
+            "total": 273.43,
+            "media": 39.06,
+            "var": 0.485
+        },
+        {
+            "nome": "MELANCIA BABY KG",
+            "total": 133.35,
+            "media": 19.05,
+            "var": -0.592
+        },
+        {
+            "nome": "COCO VERDE UN.",
+            "total": 1160.34,
+            "media": 165.76,
+            "var": 0.424
+        },
+        {
+            "nome": "COCO SECO KG",
+            "total": 1069.95,
+            "media": 152.85,
+            "var": -0.345
+        },
+        {
+            "nome": "GOIABA VERMELHA KG",
+            "total": 1085.04,
+            "media": 155.01,
+            "var": 0.298
+        },
+        {
+            "nome": "MACA SUPER K 850G",
+            "total": 470.55,
+            "media": 67.22,
+            "var": -0.605
+        },
+        {
+            "nome": "ABACAXI FATIADO UN.",
+            "total": 1069.99,
+            "media": 152.86,
+            "var": -0.444
+        },
+        {
+            "nome": "MELAO PELE DE SAPO KG",
+            "total": 284.58,
+            "media": 40.65,
+            "var": -0.658
+        },
+        {
+            "nome": "LIMAO SICILIANO KG",
+            "total": 212.09,
+            "media": 30.3,
+            "var": -0.672
+        },
+        {
+            "nome": "TANGERINA POKAN KG",
+            "total": 6262.3,
+            "media": 894.61,
+            "var": -0.331
+        },
+        {
+            "nome": "LARANJA BAHIA KG",
+            "total": 127.95,
+            "media": 18.28,
+            "var": -0.759
+        },
+        {
+            "nome": "COCO VERDE PREPARADO UN.",
+            "total": 47.94,
+            "media": 6.85,
+            "var": -0.796
+        },
+        {
+            "nome": "BANANA PRATA BDJ",
+            "total": 1419.49,
+            "media": 202.78,
+            "var": 0.512
+        },
+        {
+            "nome": "MACA SUPER K KG",
+            "total": 65.36,
+            "media": 9.34,
+            "var": -0.474
+        },
+        {
+            "nome": "UVA ROSADA UN.",
+            "total": 129.9,
+            "media": 18.56,
+            "var": 136396.0
+        },
+        {
+            "nome": "PESSEGO NACIONAL KG",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "MACA TOM AND JERRY 850G",
+            "total": 1186.95,
+            "media": 169.56,
+            "var": 421026.0
+        },
+        {
+            "nome": "TANGERINA MURCOTE KG",
+            "total": 1454.35,
+            "media": 207.76,
+            "var": 403636.0
+        },
+        {
+            "nome": "TAMARA C/ CAROCO ROYAL 200G",
+            "total": 79.9,
+            "media": 11.41,
+            "var": 344629.0
+        },
+        {
+            "nome": "KIT DE FRUTAS 2 UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "NECTARINA IMPORTADA KG",
+            "total": 97.71,
+            "media": 13.96,
+            "var": 526346.0
+        },
+        {
+            "nome": "MACA SUPER K FEIRINHA UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "MAMAO PAPAYA FATIADO EMB. KG",
+            "total": 14.64,
+            "media": 2.09,
+            "var": -0.581
+        },
+        {
+            "nome": "BANANA DA TERRA KG",
+            "total": 96.71,
+            "media": 13.82,
+            "var": 238976.0
+        },
+        {
+            "nome": "MACA MIUDA KG",
+            "total": 5.34,
+            "media": 0.76,
+            "var": 0.756
+        },
+        {
+            "nome": "CAQUI RAMA UN.",
+            "total": 5009.09,
+            "media": 715.58,
+            "var": 0.099
+        },
+        {
+            "nome": "CAQUI RAMA KG",
+            "total": 8.63,
+            "media": 1.23,
+            "var": -0.752
+        },
+        {
+            "nome": "ATEMOIA UN.",
+            "total": 44.91,
+            "media": 6.42,
+            "var": 0.8
+        },
+        {
+            "nome": "BANANA MACA KG",
+            "total": 5.04,
+            "media": 0.72,
+            "var": 0.478
+        },
+        {
+            "nome": "MELAO AMARELO FATIADO UN.",
+            "total": 11.99,
+            "media": 1.71,
+            "var": -0.394
+        },
+        {
+            "nome": "GOIABA UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "BANANA OURO KG",
+            "total": 15.12,
+            "media": 2.16,
+            "var": 244419.0
+        },
+        {
+            "nome": "CAQUI R. SELECIONADO UN.",
+            "total": 15.98,
+            "media": 2.28,
+            "var": -0.333
+        },
+        {
+            "nome": "MACA SENINHA 1KG",
+            "total": 1349.07,
+            "media": 192.72,
+            "var": 740317.0
+        },
+        {
+            "nome": "LIMAO TAHITI 1KG",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "MANGA ESPADA KG",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "UVA LABRUMIER S/ CAROCO UN.",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "MANGA PALMER BDJ",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "BANANA D'AGUA BDJ",
+            "total": 140.53,
+            "media": 20.08,
+            "var": -0.073
+        },
+        {
+            "nome": "ABACATE BDJ",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "MACA BDJ",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "MACA KIDS 1KG",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "MAMAO PAPAYA BDJ",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "TANGERINA POKAN UN",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "ABACATE BJ",
+            "total": 0.0,
+            "media": 0.0,
+            "var": -1.0
+        },
+        {
+            "nome": "MAMAO FORMOSA EMB. KG",
+            "total": 6.41,
+            "media": 0.92,
+            "var": -0.987
+        },
+        {
+            "nome": "MELANCIA FATIADA C/CASCA UN",
+            "total": 6528.51,
+            "media": 932.64,
+            "var": 0.0
+        },
+        {
+            "nome": "KIWI FRACIONADO UN.",
+            "total": 181.86,
+            "media": 25.98,
+            "var": 0.0
+        },
+        {
+            "nome": "MANGA FRACIONADA UN.",
+            "total": 214.57,
+            "media": 30.65,
+            "var": 0.0
+        },
+        {
+            "nome": "MAMAO FRACIONADO UN.",
+            "total": 125.79,
+            "media": 17.97,
+            "var": 0.0
+        },
+        {
+            "nome": "PESSEGO UN.",
+            "total": 95.94,
+            "media": 13.71,
+            "var": 0.0
+        },
+        {
+            "nome": "MELAO AMARELO FRACIONADO UN.",
+            "total": 137.77,
+            "media": 19.68,
+            "var": 0.0
+        },
+        {
+            "nome": "AMEIXA UN.",
+            "total": 57.93,
+            "media": 8.28,
+            "var": 0.0
+        },
+        {
+            "nome": "ABACAXI FRACIONADO UN.",
+            "total": 35.94,
+            "media": 5.13,
+            "var": 0.0
+        },
+        {
+            "nome": "PERA UN",
+            "total": 41.94,
+            "media": 5.99,
+            "var": 0.0
+        },
+        {
+            "nome": "LIMAO TAHITI UN",
+            "total": 19.96,
+            "media": 2.85,
+            "var": 0.0
+        },
+        {
+            "nome": "MACA UN",
+            "total": 17.98,
+            "media": 2.57,
+            "var": 0.0
+        },
+        {
+            "nome": "MELANCIA FRACIONADA UN.",
+            "total": 31.96,
+            "media": 4.57,
+            "var": 0.0
+        },
+        {
+            "nome": "MACA VERDE 500G",
+            "total": 3.5,
+            "media": 0.5,
+            "var": 0.0
+        },
+        {
+            "nome": "PITAIA BJ",
+            "total": 195.86,
+            "media": 27.98,
+            "var": 0.0
+        },
+        {
+            "nome": "MELANCIA PEDACO C/CASCA KG",
+            "total": 5.42,
+            "media": 0.77,
+            "var": 0.0
+        },
+        {
+            "nome": "MELAO PELE SAPO FATIADO UN.",
+            "total": 51.96,
+            "media": 7.42,
+            "var": 0.0
+        },
+        {
+            "nome": "MELAO REDINHA FATIADO UN.",
+            "total": 13.99,
+            "media": 2.0,
+            "var": 0.0
+        },
+        {
+            "nome": "ABACAXI C/ MELANCIA UN.",
+            "total": 5.99,
+            "media": 0.86,
+            "var": 0.0
+        },
+        {
+            "nome": "CAJU BJ",
+            "total": 99.95,
+            "media": 14.28,
+            "var": 0.0
+        },
+        {
+            "nome": "PERA BDJ",
+            "total": 4.99,
+            "media": 0.71,
+            "var": 0.0
+        },
+        {
+            "nome": "TANGERINA BDJ",
+            "total": 13.93,
+            "media": 1.99,
+            "var": 0.0
+        },
+        {
+            "nome": "UVA RED GLOBE UN.",
+            "total": 10.9,
+            "media": 1.56,
+            "var": 0.0
+        },
+        {
+            "nome": "BANANA DAGUA 1KG",
+            "total": 2.99,
+            "media": 0.43,
+            "var": 0.0
+        }
+    ],
+
+
+
+    "top5": [
+        {"nome": "Banana Prata", "total": 85092.45, "media": 12156.06, "var": -39.808},
+        {"nome": "Laranja Pera", "total": 19261.48, "media": 2751.64, "var": 30.747},
+        {"nome": "Mamão Papaya", "total": 26462.60, "media": 3780.37, "var": -15.683},
+        {"nome": "Maçã Gala", "total": 13245.90, "media": 1892.27, "var": -43.919},
+        {"nome": "Uva Thompson S/ Caroço", "total": 16068.87, "media": 2295.55, "var": 62.700}
+    ],
+    "high": [
+        {"nome": "Uva Thompson S/ Caroço", "total": 16068.87, "var": 62.70},
+        {"nome": "Laranja Pera", "total": 19261.48, "var": 30.747},
+        {"nome": "Tangerina Murcote", "total": 1454.35, "var": 403.636},
+        {"nome": "Kiwi Chileno", "total": 3667.17, "var": 14.452},
+        {"nome": "Pera Williams", "total": 7124.00, "var": 16.802}
+    ],
+    "potential": [
+        {"nome": "Maracujá", "total": 7412.95, "var": -2.358},
+        {"nome": "Abacaxi C/ Casca", "total": 4875.85, "var": 0.878},
+        {"nome": "Goiaba Vermelha", "total": 1085.04, "var": 29.772},
+        {"nome": "Melancia C/ Casca", "total": 9439.78, "var": 26.809},
+        {"nome": "Kiwi Chileno", "total": 3667.17, "var": 14.452}
+    ],
+    "low": [
+        {"nome": "Banana Prata", "total": 85092.45, "var": -40.107},
+        {"nome": "Manga Palmer", "total": 10113.25, "var": -40.41},
+        {"nome": "Mamão Formosa", "total": 10390.68, "var": -42.747},
+        {"nome": "Limão Tahiti", "total": 6798.52, "var": -53.571},
+        {"nome": "Melão Orange", "total": 343.89, "var": -82.606}
+    ],
+    "deep_low": [
+        {"nome": "Abacaxi C/ Casca", "total": 4875.85, "var": -0.878},
+        {"nome": "Abacaxi Fatiado", "total": 0.00, "var": -45.075},
+        {"nome": "Banana D’Água", "total": 0.00, "var": -14.668},
+        {"nome": "Banana Prata", "total": 85092.45, "var": -40.107},
+        {"nome": "Coco Seco", "total": 0.00, "var": -36.282},
+        {"nome": "Coco Verde Preparado", "total": 0.00, "var": -79.658},
+        {"nome": "Laranja Lima", "total": 0.00, "var": -35.131},
+        {"nome": "Laranja Bahia", "total": 0.00, "var": -75.921},
+        {"nome": "Laranja Seleta", "total": 0.00, "var": -35.150},
+        {"nome": "Limão Tahiti", "total": 6798.52, "var": -53.571},
+        {"nome": "Maçã Argentina", "total": 0.00, "var": -78.335},
+        {"nome": "Maçã Gala", "total": 13245.90, "var": -43.919},
+        {"nome": "Mamão Formosa", "total": 10390.68, "var": -42.747},
+        {"nome": "Mamão Papaya", "total": 26462.60, "var": -15.683},
+        {"nome": "Manga Palmer", "total": 10113.25, "var": -40.411},
+        {"nome": "Manga Tommy", "total": 0.00, "var": -51.826},
+        {"nome": "Maracujá", "total": 7412.95, "var": -2.358},
+        {"nome": "Melão Amarelo", "total": 0.00, "var": -31.856},
+        {"nome": "Melão Rei", "total": 0.00, "var": -31.527},
+        {"nome": "Melão Orange", "total": 343.89, "var": -82.606},
+        {"nome": "Melão Pele de Sapo", "total": 0.00, "var": -65.882},
+        {"nome": "Melancia Baby", "total": 0.00, "var": -59.285},
+        {"nome": "Morango", "total": 0.00, "var": -11.543},
+        {"nome": "Pêssego", "total": 0.00, "var": -39.244},
+        {"nome": "Pêssego Nacional", "total": 0.00, "var": -100.000},
+        {"nome": "Abacate", "total": 0.00, "var": -34.943},
+        {"nome": "Melancia Fatiada S/ Casca", "total": 0.00, "var": -98.206}
+]
+>>>>>>> 424ad9836ce598a2ab3953b72de3b59928c5223f
 }
