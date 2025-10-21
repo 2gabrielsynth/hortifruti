@@ -1,6 +1,5 @@
-
 from flask import Flask, jsonify, request, send_from_directory, render_template, flash, redirect, url_for, session, send_file
-import requests
+
 
 
 app = Flask(__name__)
@@ -730,4 +729,5 @@ def bi():
 
 
 if __name__ == '__main__':
-    app.run(host="192.168.25.200",port=5560,debug=False)    
+    app.run(host="192.168.25.200",port=5560,debug=True)    
+    
