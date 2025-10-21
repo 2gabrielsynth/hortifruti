@@ -714,7 +714,7 @@ def get_chart_data_verduras():
 
 
 
-@app.route('/')
+@app.route('/bi')
 def bi():
     return render_template('bi.html')
 
@@ -725,9 +725,7 @@ def bi():
 
 
 
-
-
-
-if __name__ == '__main__':
-    app.run(host="192.168.25.200",port=5560,debug=True)    
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5560))  
+    app.run(host="0.0.0.0", port=port, debug=False) 
     
