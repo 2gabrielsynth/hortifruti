@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from flask import Flask, jsonify, request, send_from_directory, render_template, flash, redirect, url_for, session, send_file
 import requests
 
@@ -1464,5 +1464,5 @@ def bi():
 
 if __name__ == '__main__':
     app.run(host="192.168.25.200",port=5560,debug=True)    
->>>>>>> 424ad9836ce598a2ab3953b72de3b59928c5223f
+
     
